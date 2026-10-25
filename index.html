@@ -509,6 +509,41 @@
                 aspect-ratio: 1.6;
             }
         }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 12px;
+        }
+        .cert-item {
+            display: block;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform .2s, box-shadow .2s;
+        }
+        .cert-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0,0,0,.12);
+        }
+        .cert-item img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+        }
+        .cert-caption {
+            padding: 10px 12px;
+            font-size: .95rem;
+            font-weight: 600;
+        }
+        .cert-caption span {
+            font-weight: 400;
+            font-size: .85rem;
+            color: #6b7280;
+        }
     </style>
 </head>
 <body>
@@ -600,7 +635,7 @@
         </li>
         <li class="news-item">
             <div class="news-date">Apr 2026</div>
-            <div>💼 Participated in <strong>One Day Boschler 2026</strong> at Bosch Global Software Technologies Vietnam, gaining hands-on insight into real-world industrial software projects.</div>
+            <div>💼 Participated in <strong>One Day Boschler 2026</strong> at Bosch Global Software Technologies Vietnam.</div>
         </li>
     </ul>
 </section>
@@ -636,43 +671,7 @@
     </div>
 </section>
 
-<style>
-.cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 16px;
-    margin-top: 12px;
-}
-.cert-item {
-    display: block;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    transition: transform .2s, box-shadow .2s;
-}
-.cert-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0,0,0,.12);
-}
-.cert-item img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    display: block;
-}
-.cert-caption {
-    padding: 10px 12px;
-    font-size: .95rem;
-    font-weight: 600;
-}
-.cert-caption span {
-    font-weight: 400;
-    font-size: .85rem;
-    color: #6b7280;
-}
-</style>
+
         <!-- Selected Publications Section -->
         <!-- <section>
             <div class="section-header-wrap">
